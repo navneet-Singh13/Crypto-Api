@@ -60,7 +60,7 @@ background: linear-gradient(to top, #480048, #C04848); /* W3C, IE 10+/ Edge, Fir
         padding: 30px;
     }
     .container .card{
-        width: 70%;
+        width: 59%;
         margin: 0 auto;
     }
 }
