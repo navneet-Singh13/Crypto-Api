@@ -2,11 +2,16 @@
     padding: 0;
     margin: 0;
 }
-
+body{ 
+    overflow-x: hidden;
+}
 .container{ 
-    background: #C04848;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap:30px ;
 
     padding: 40px;
     margin: 0 auto;
@@ -14,21 +19,22 @@ background: linear-gradient(to top, #480048, #C04848); /* W3C, IE 10+/ Edge, Fir
     width: 90%;
     max-width: 1100px;
     background-color: black;
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    grid-gap:30px ;
+   
 }
 .card{ 
     font-family: 'Anonymous Pro', monospace;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    padding: 30px;
+    padding: 20px;
     color: aliceblue;
     background: url(./bg.jpg) transparent no-repeat center center/cover ;
- 
+    
+    
     width: 250px;
     height: 300px ;
 }
 .card img { 
+    margin-right: 2px;
+    padding-right: 2px;
     height: 90px ;
     width: 90px ;
 }
@@ -36,31 +42,88 @@ background: linear-gradient(to top, #480048, #C04848); /* W3C, IE 10+/ Edge, Fir
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .header span{ 
     padding-left : 40px ; 
-    font-size: 40px;
+    font-size: 2rem;
 }
 .content > h3{
     color: rgb(112, 112, 245) !important;
 }
 .card .content { 
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    padding: 11px;
+    padding: 1px;
     font-family: 'Poppins', sans-serif;
     margin-top: 80px;
     margin-bottom: 30px ;
     background-color: rgb(23, 23, 23);
     
 }
+.mainheader{ 
+    display: inline-block; 
+    color:whitesmoke ; 
+    height: 500px;
+    background-color: black;
+    width: 100%;
+}
+.mainheader .content-main { 
+     padding: 60px 0 0 50px ;
+     font-family: 'Poppins', sans-serif;
+}
+.mainheader .content-main span{ 
+    font-size: 30px;
+}
+.mainheader .content-main h1{
+    background: #659999;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: inline-block;
+padding: 8px;
+}
+.mainheader img { 
+    padding: 60px 0 0 50px ;
+   
+    width: 150px;
+    display: inline-block;
+}
+.coinname{ 
+     
+    padding-left: 0;
+    margin-left: 1px;
+}
+@media (max-width:900px) {
+    .container{ 
+        grid-template-columns: repeat(2 ,1fr);
+       
+    }
+    
+
+
+}  
 @media (max-width:500px) {
     .container{ 
         grid-template-columns: repeat(1 ,1fr);
         justify-content: center;
-        padding: 30px;
+        padding: 90px;
+        width: 50%;
     }
-    .container .card{
+    
+    .container .card {
+        width: 150px;
+        height: 400px;
         width: 59%;
         margin: 0 auto;
+    }
+    .card .content { 
+        margin-top: 110px;
+    }
+    .card .content p,a {
+        padding: 8px; 
+    }
+    .card .content h3{ 
+        padding: 8px; 
     }
 }
