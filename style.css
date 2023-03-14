@@ -85,8 +85,8 @@ padding: 8px;
 }
 .mainheader img { 
     padding: 60px 0 0 50px ;
-   
-    width: 150px;
+    margin-bottom: 15px;
+    width: 100px;
     display: inline-block;
 }
 .coinname{ 
@@ -104,17 +104,21 @@ padding: 8px;
 
 }  
 @media (max-width:500px) {
+    body{ 
+        background-color: black;
+    }
     .container{ 
+        margin: 0 auto;
         grid-template-columns: repeat(1 ,1fr);
         justify-content: center;
         padding: 90px;
-        width: 50%;
+        width: 80%;
     }
     
     .container .card {
         width: 150px;
         height: 400px;
-        width: 59%;
+        width: 60%;
         margin: 0 auto;
     }
     .card .content { 
