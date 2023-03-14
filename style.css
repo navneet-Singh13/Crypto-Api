@@ -108,6 +108,7 @@ padding: 8px;
         background-color: black;
     }
     .container{ 
+        background :whitesmoke ; 
         margin: 0 auto;
         grid-template-columns: repeat(1 ,1fr);
         justify-content: center;
